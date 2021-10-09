@@ -1,0 +1,2 @@
+(1) Out of 100 pairs of integers, the improved(?) Euclid's algorithm outperformed the original one in 10 pairs,and the average saved time for one pair of integers was 0.000218803299116milliseconds.
+(2) Out of 100 pairs of integers, the original Euclid's algorithm outperformed the improved(?) one in 62 pairs,and the average saved time for one pair of integers was 0.000376435783426milliseconds.

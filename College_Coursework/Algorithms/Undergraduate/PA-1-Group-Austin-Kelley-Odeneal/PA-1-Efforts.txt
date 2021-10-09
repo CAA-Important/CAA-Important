@@ -1,0 +1,2 @@
+Each team member coded their own version of the program.  Once each team member made his own version, we met and looked at each others code.  
+After we had decided who had the best code, we agreed to use the documents and source code from that code as the source code to turn in.
