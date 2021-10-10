@@ -1,1 +1,1 @@
-Projects from undergraduate algorithms
+Projects from undergraduate level Algorithms
