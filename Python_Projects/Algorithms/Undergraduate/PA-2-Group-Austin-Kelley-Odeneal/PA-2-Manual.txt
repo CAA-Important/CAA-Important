@@ -1,0 +1,26 @@
+Open the folder "PA-2-Executable"
+
+Open "dist," open "PA-2-Source," and double click on "PA-2-Source.exe"
+
+The program should now be running.
+
+In the Spinbox (the rectangle with the number inside and the up-arrow and down-arrow buttons on the side):
+Choose an integer between 1 and 9 (other numbers will do nothing, as they are invalid)
+
+Click the button labeled "Display Array Sorting Results"
+
+The first time this is done for your chosen number, it will generate an array of real numbers;
+sort that array; and display the number of items in the area, the time taken to sort the array, 
+and the original and sorted arrays side-by-side.
+After the first time, it will redisplay the information from the first sort.
+
+Checking the "Save Information to File" checkbox will have the program save the number of items (n),
+the value n * lg(n), the time taken to sort, and (n * lg(n)) / (time taken to sort).
+That file will be created in the folder "MergeSortFile," which will be in the
+"PA-2-Source" folder that was mentioned above (PA-2-Executable -> dist -> PA-2-Source)
+
+Leaving the button unchecked, or unchecking the button, will not write anything to a file.
+
+Repeat the above instructions as much as desired.
+
+Click the button labeled "Terminate Program" to close the program.

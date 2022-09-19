@@ -1,0 +1,21 @@
+{
+  "name": "chat_bot",
+  "version": "1.0.0",
+  "description": "Bot to read and handle messages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/translate": "^2.1.2",
+    "express": "^4.15.2",
+    "google-translate": "^2.2.0",
+    "google-translate-api": "^2.3.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.1.1",
+    "tmi.js": "^1.2.1",
+    "translatte": "^1.0.3"
+  }
+}

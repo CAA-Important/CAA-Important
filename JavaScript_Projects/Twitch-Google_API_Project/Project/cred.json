@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cobalt-deck-223421",
+  "private_key_id": "48c1ffc0be4283f9761f92fcbc220b27b63af56f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDxJ38UMuC2RJsc\nTOgerqmaatFqcqs1+DY82YZslGqjIXkmRGRUtohcKYzsI/I8dh9rlfpa0Z6OcOie\n/HABPWoE671HBgDwrxx2LB29xP2xjCDCQgZ8CP9Dfo+QF7AeJK2yhzn26jsqiZii\nRnBz8/U4Kld8UGlXdfNLgeGrRSQdi7D9MwRRn4arJ6LHamV9Xkr/lBnKNiKmHXzt\nMO6LY7lRH/DXCkx/FcT5wj3NzU+QTNSp5zxRiP58I7BS1FI6tMgZtLlbrzN8IaZv\nn7u0upVUlbLzFnOAplISEvW4mMgGVG416X3fFoTxLXa4YB0ul6XGihn/jY4qsg2A\nRKYlW9cRAgMBAAECggEAA5G8FcZzAP+e9BpHTTz0ka6HDvZHhnL4CoqFrNG9ilCS\nhHh6q65P8l1DErOtgCuXZ3Y+0F1N5XnSV5gQ6FPKX+xFTunN1cIhv7YDcq2Zu6kB\nSx7DDc7sSEl1QoK3Ppr4Xy4VM4xf9881jSFRxMWVmZE23kYqaPr78OApQOmzESTa\nzLU44CHhCsj5LuvR6vRBxSF/L5pn5C5ot5UXKmedkZiaaglUN74PqzH09nE7Z5r4\nNrftM20ym2K+1IyDGhXAmsIECGTiZCZ3lVKApi56DUVCwqXv43h0moV9ylopciJQ\nqu36STtkyyd0H2LUru6INUQviS4lY51YfMTw7B/TYQKBgQD7ozaRMsEcwbivbIFJ\nncYVO2KBg7Rf0AdgxqzD+oGvJ1/CIQPH7ish6jtt6E3jEVi9W43LJ8Mqwjnq7x7o\nFIMrgUeAs2IjDbni5m1CriY3suA/tH182MQt4WEn73ThBI6mpUXOWtxWc7bkzNK5\nNY2+fmeAWUTRHtumGbftNug67QKBgQD1VcH4TizATTCspy6PyvaAWkrY6Kj0TD39\nAqycticxblLq+rY4RmsOaE08hm+hDvQjh1GLucQ8FWZIepRA0grl1G+m3eXt2VRN\n4mDuBkhLwIEvtKYEiS2aKt0BBujWkOED8AHY5W71Vt2wUB3/vy8UM3IXcQ6Gvg1F\nlrvH9R20NQKBgQCVvdcf6lr+WM0lHuWEwC16vv7sYUp55ZouXau7Z5u6dizGoczV\nMYZbRT6eNan7oHv1GsEzDnNWQ4QhqK/0nRg9UE4TaSvR/j4KpuKH1ogJhxlo72fp\nXjjHsKGXGSitKoAU7K6wkGMj0vIYD0aqThMOM7w1pWmNI9bDbfSEZbMmNQKBgQCM\nl9Gp73rb1SCAwOoBA2oSEix0c5hnL84SUVcEE6sQO84O1RBZ3Zj6T7F7bvtHzB8C\nwUhtD08ys3zDKmQNZZFTNlOpx949WN9kJsgvf7AsoSwnX5oIXWihwdCXBxOl6q7Y\np9EXMBxPQrGWmcMnTbO4GudWIbcWZpGKgKAqLgEQxQKBgDWyD6bY5EdIWaKDta79\nDYQEF/C5uBwa0Zra4xCTg4umALTLXaREe+zLotPGAAOpD9AEbREwBovv3LuaDAhe\ngrzb4t033/+1WSL5k5eNVgYk2JanlLoLeT4LYrbFqR2foLM4+9RywI1pre7CkCMQ\n/fljxw9JiCJKi0dveoz0Tlqd\n-----END PRIVATE KEY-----\n",
+  "client_email": "twitchtranslate@cobalt-deck-223421.iam.gserviceaccount.com",
+  "client_id": "106529535441483667603",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/twitchtranslate%40cobalt-deck-223421.iam.gserviceaccount.com"
+}

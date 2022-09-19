@@ -1,0 +1,21 @@
+{
+	"name": "Bag_Counts_In_Chat",
+	"description": "Informs you about the number of bags collected during a heist",
+	"author": "DoubleA176",
+	"version": "1.0",
+	"blt_version" : 2.0,
+	"color" : "0.96 0.53 0.86",
+	"image" : "icon.png",
+	"contact": "N/A",
+
+	"hooks": [
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "menumanager.lua"
+		},
+		{
+			"hook_id": "lib/managers/lootmanager",
+			"script_path": "lootmanager.lua"
+		}
+	]
+}

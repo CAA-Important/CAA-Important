@@ -1,0 +1,1 @@
+A few small projects for learning the basics of Lua.

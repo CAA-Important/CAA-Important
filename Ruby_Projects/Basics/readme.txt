@@ -1,0 +1,1 @@
+A couple of small projects for learning the basics of Ruby.

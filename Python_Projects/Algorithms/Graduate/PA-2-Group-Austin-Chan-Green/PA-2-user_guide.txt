@@ -1,0 +1,29 @@
+How to run the program:
+
+Go into the PA-2-Application folder
+Double click the "PA-2-Executable.exe" file
+
+To add a node, enter the name of a node into the textbox above the "Add Node" button, then press the "Add Node" button.
+You cannot add multiple nodes with the same name.
+
+To add an edge, enter the name of the source node in the left textbox above the "Add Edge" button, enter the name of the
+sink node into the right textbox above the "Add Edge" button, and the press the "Add Edge" button.  Any nodes not already
+in the graph will be added to the graph.
+
+Removing a node or an edge follows a similar process to the adding process, but you use the textboxes above the "Remove Node"
+and "Remove Edge" buttons instead.  You cannot remove a node that is not in the graph, and if there are multiple edges between
+two nodes, only one will be removed at a time.
+
+Whenever a node/edge is added/removed, the graph display in the top section of the application will be updated to show the
+current graph.
+
+Pressing the "SCC" button will create a new window to appear with a picture of the strongly connected components of the
+graph.
+
+
+
+Group member contribution:
+
+Alec Austin: 33.33%
+Ho Yin Chan: 33.34%
+Wyatt Green: 33.33%

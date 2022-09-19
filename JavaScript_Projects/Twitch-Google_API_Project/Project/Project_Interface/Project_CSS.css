@@ -1,0 +1,52 @@
+h1{
+	color: White;
+	text-align: center;
+	font-size: 60px;
+}
+
+body{
+	background-color: DarkSlateGrey;
+	
+}
+
+.translated_chat{
+	background-color: White;
+	table-layout: fixed;
+	width: 50%;
+}
+
+.translated_chat_message{
+	color: Black;
+	border: 1px solid black;
+	font-size: 18px;
+	width: 50%;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	
+}
+
+.translate_settings{
+	color: White;
+	float: left;
+	padding: 150px 0;
+	width: 32%;
+	text-align: center;
+}
+
+.chat {
+	color: White;
+	float: left;
+	padding: 150px 0;
+	width: 33.33%;
+	text-align: center;	
+}
+
+.translated{
+	color: White;
+	float: left;
+	width: 33.33%;
+	height: 600px;
+	border: 3px solid black;
+	text-align: center;
+	overflow: auto;
+}
