@@ -1,0 +1,11 @@
+{% extends "base_menu.html" %}
+{% block content %}
+    <p>
+        "Polls" is a simple application that allows visitors to vote in admin
+        created polls.
+    </p>
+    <p>
+        <a href="{% url 'polls:index' %}">Click here</a> to return to the
+        Polls application.
+    </p>
+{% endblock %}

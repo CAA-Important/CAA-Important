@@ -1,0 +1,11 @@
+{% extends "base_menu.html" %}
+{% block content %}
+    <p>
+        "Hello" is a simple application that keeps count of how many
+        times someone has viewed its page during a given browser session.
+    </p>
+    <p>
+        <a href="{% url 'hello:hello_app' %}">Click here</a> to return to the
+        Hello application.
+    </p>
+{% endblock %}

@@ -1,0 +1,108 @@
+
+/* This is a partial blocks.css, you need to add more rules
+   to this file to complete the assignment.  Do not add any CSS
+   styling to the original index.htm / start.htm */
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#one {
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+
+    padding: 5px;
+    margin: 5px;
+
+    width: 25%;
+
+}
+
+#two {
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+
+    position: fixed;
+    right: 0%;
+    top: 0%;
+
+    padding: 5px;
+    margin: 5px;
+
+    width: 25%;
+
+}
+
+#three {
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: orange;
+
+    position: fixed;
+    left: 0%;
+    top: 0%;
+
+    padding: 5px;
+    margin: 5px;
+
+    width: 25%;
+
+}
+
+#four {
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow;
+
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+
+    padding: 5px;
+    margin: 5px;
+
+    width: 25%;
+
+}
+
+#link a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#link a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#link a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#link a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#link {
+
+    display: block;
+    text-align:center;
+    width: 10%;
+    margin: auto;
+
+    font-family: "helvetica neue",Helvetica,Arial,sans-serif;
+    background-color: #2f418e;
+
+}

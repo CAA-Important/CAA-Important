@@ -1,0 +1,11 @@
+{% extends "base_menu.html" %}
+{% block content %}
+    <p>
+        You have visited this page {{ request.session.num_visits }}
+        time{{ request.session.num_visits|pluralize }} this session.
+    </p>
+    <p>
+        <a href="{% url 'hello:hello_info' %}">Click here</a> for information
+        about the Hello application.
+    </p>
+{% endblock %}
