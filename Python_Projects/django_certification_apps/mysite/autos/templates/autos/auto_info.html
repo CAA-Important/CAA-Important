@@ -1,0 +1,20 @@
+{% extends "base_menu.html" %}
+{% block content %}
+    <p>
+        "Autos" is an application that allows logged-in users to view a list
+        of automobiles along with the information of those automobiles.
+    </p>
+    <p>
+        It also allows logged-in users to create "automobile" and "make"
+        information that other users can access and view.
+    </p>
+    <p>
+        Finally, it allows a logged-in user to update and delete automobile
+        and make information.  No owndership is enforced in this application.
+        Anyone can delete anything.
+    </p>
+    <p>
+        <a href="{% url 'autos:all' %}">Click here</a> to return to the
+        Autos application.
+    </p>
+{% endblock %}

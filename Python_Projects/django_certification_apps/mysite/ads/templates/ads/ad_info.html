@@ -1,0 +1,42 @@
+{% extends "base_menu.html" %}
+{% block content %}
+    <p>
+        "Ads" is an application that allows logged-in users to view a list
+        of ads along with the information of those ads.
+    </p>
+    <p>
+        It also allows logged-in users to create ads that
+        other users can access and view.
+    </p>
+    <br/>
+    <ul>
+        <li>
+            Ads have a title and details, and they can also include an image
+            and tags.
+        </li>
+        <li>
+            Ads can be searched by titles or tags using the search bar at the
+            top right of the main ad page.
+        </li>
+        <li>
+            Ads can be favorited by clicking the star to the right of the
+            ad on the main ad page.
+        </li>
+        <li>
+            Clicking the ad will bring you to its detail view, which
+            contains all of the ads information along with a live-updating
+            comment section for that ad.
+        </li>
+        <li>
+            Ownership is enforced in this application.
+            Users can update and delete ads that they have made and cannot update
+            nor delete the ads made by other users.
+        </li>
+    </ul>
+    <br/>
+    <br/>
+    <p>
+        <a href="{% url 'ads:all' %}">Click here</a> to return to the
+        Ads application.
+    </p>
+{% endblock %}

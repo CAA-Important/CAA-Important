@@ -1,0 +1,32 @@
+{% extends "base_menu.html" %}
+{% block content %}
+    <p>
+        "Cats" is an application that allows logged-in users to view a list
+        of cats along with the information of those cats.
+    </p>
+    <p>
+        It also allows logged-in users to create "cat" and "breed"
+        information that other users can access and view.
+    </p>
+    <p>
+        Finally, it allows a logged-in user to update and delete cat
+        and breed information.  No owndership is enforced in this application.
+        Anyone can delete anything.
+    </p>
+    <br/>
+    <br/>
+    <p>
+        If you've been to the Autos application, you might find that this one
+        is very similar.  The purpose of this application was to provide
+        extra experience in developing Django models.
+    </p>
+    <p>
+        In the Autos app, the models were provided by default.  In this one,
+        I had to create the models myself based on the described properties
+        of Cats and Breeds.
+    </p>
+    <p>
+        <a href="{% url 'cats:all' %}">Click here</a> to return to the
+        Cats application.
+    </p>
+{% endblock %}
