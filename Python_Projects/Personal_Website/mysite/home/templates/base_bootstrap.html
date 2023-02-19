@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<!-- Edit the appropriate settings.py and add APP_NAME = 'DJ4E Samples' or similar -->
+<title>{% block title %}{{ settings.APP_NAME }}{% endblock %}</title>
+
+<meta name="dj4e-code" content="42167356830186">
+
+<link rel="stylesheet"
+    href="{% static 'css/site_theme.css' %}"
+>
+
+{% block head %} {% endblock %}
+
+</head>
+<body>
+<div class="container">
+{% block navbar %} {% endblock %}
+{% block welcome %} {% endblock %}
+{% block messages %}
+    {% if messages %}
+    {% for msg in messages %}
+        <div class="alert alert-{{msg.level_tag}}" role="alert">
+        {{msg.message}}
+        </div>
+    {% endfor %}
+    {% endif %}
+{% endblock %}
+{% block content %}
+{% endblock %}
+</div>
+{% block footer %} {% endblock %}
+</body>
+</html>
