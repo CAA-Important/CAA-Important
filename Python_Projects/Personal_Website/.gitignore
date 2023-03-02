@@ -141,3 +141,6 @@ dmypy.json
 
 # Other
 .DS_Store
+
+# Zappa Settings
+zappa_settings.json
