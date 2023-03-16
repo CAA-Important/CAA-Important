@@ -4,7 +4,7 @@ from django.conf import settings
 
 # Create your views here.
 
-class HomeView(View):
+class AboutView(View):
     def get(self, request):
         host = request.get_host()
         islocal = host.find('localhost') >= 0 or host.find('127.0.0.1') >= 0
@@ -12,4 +12,4 @@ class HomeView(View):
             'installed': settings.INSTALLED_APPS,
             'islocal': islocal
         }
-        return render(request, 'home/home_main.html', context)
+        return render(request, 'about/about_main.html', context)

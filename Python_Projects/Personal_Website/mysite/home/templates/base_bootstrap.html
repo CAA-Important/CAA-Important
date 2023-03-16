@@ -5,10 +5,8 @@
         <!-- Edit the appropriate settings.py and add APP_NAME = 'DJ4E Samples' or similar -->
         <title>{% block title %}{{ settings.APP_NAME }}{% endblock %}</title>
 
-        <meta name="dj4e-code" content="42167356830186">
-
         <link rel="stylesheet"
-            href="{% static 'css/CSS_Template_1/rounded/style.css' %}"
+            href="{% static 'css/menu_style.css' %}"
         >
 
         {% block head %} {% endblock %}
@@ -22,8 +20,8 @@
             </div>
             <div id="navcontainer">
                 <ul id="navlist">
-                  <li id="active"><a id="current" href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
+                  <li id="active"><a id="current" href="/">Home</a></li>
+                  <li><a href="{% url 'about:about_app' %}">About</a></li>
                   <li><a href="#">Portfolio</a></li>
                   <li><a href="#">Services</a></li>
                   <li><a href="#">Product</a></li>
@@ -41,4 +39,7 @@
             <div id="footer"> <a href="#">homepage</a> | <a href="#">contact</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> | &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a> | This work is licensed under a <a rel="license nofollow" target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a> </div>
         </div>
     </body>
+    {% block scripts%}
+        <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+    {% endblock scripts%}
 </html>

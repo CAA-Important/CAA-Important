@@ -1,0 +1,54 @@
+{% extends "base_bootstrap.html" %}
+{% load static %}
+
+{% block head%}
+    {{ block.super}}
+    <link rel="stylesheet"
+    href="{% static 'css/style.css' %}"
+    >
+{% endblock head%}
+
+{% block content %}
+
+    <div id="tabs">
+        {% block tab_labels%}{% endblock tab_labels%}
+    </div>
+
+
+    <div id="info_store">
+        {% block tab_content%}{% endblock tab_content%}
+    </div>
+{% endblock content %}
+
+{% block scripts%}
+    {{ block.super}}
+    <script type="text/javascript">
+        $(document).ready(function(){
+                console.log("Ready function");
+                function visSelectedContent(thing_id) {
+                    $("#info_store > div").each(function(){
+                        if(this.id == thing_id)
+                        {
+                            $(this).show();
+                        }
+                        else
+                        {
+                            $(this).hide();
+                        }
+                    });
+                }
+                console.log($("#tabs").children().length);
+                $("#tabs a").each(function(){
+                    $(this).click(function(event)
+                    {
+                        event.preventDefault();
+                        visSelectedContent($(this).attr("href"));
+                        return false;
+                    })
+                });
+                console.log("tab click setup");
+            }
+        )
+
+    </script>
+{% endblock scripts%}
