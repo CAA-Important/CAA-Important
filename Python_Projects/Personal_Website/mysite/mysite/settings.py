@@ -14,6 +14,9 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
+import pymysql 
+pymysql.install_as_MySQLdb()
+
 load_dotenv()
 
 import mimetypes
@@ -44,10 +47,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django_s3_storage',
     'django.contrib.staticfiles',
     'jquery',
     'home.apps.HomeConfig',
     'about.apps.AboutConfig',
+    'portfolio.apps.PortfolioConfig',
 ]
 
 MIDDLEWARE = [
@@ -85,9 +90,18 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
+    
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': BASE_DIR / 'db.sqlite3',
+    #}
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get("AURORA_DB_NAME"), # dbname
+        'USER': os.environ.get("AURORA_DB_USER"), # master username
+        'PASSWORD': os.environ.get("AURORA_DB_PASSWORD"), # master password
+        'HOST': os.environ.get("AURORA_DB_HOST"), # Endpoint
+        'PORT': '3306',
     }
 }
 
@@ -126,11 +140,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+S3_BUCKET = os.environ.get("S3_BUCKET_NAME")
+
+STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
+
+AWS_S3_BUCKET_NAME_STATIC = S3_BUCKET
+
+STATIC_URL = "https://%s.s3.amazonaws.com/" % S3_BUCKET
+
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
-STATIC_URL = 'static/'
+
 STATIC_ROOT = ''
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'mysite/static'),

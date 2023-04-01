@@ -1,0 +1,74 @@
+{% extends "base_menu.html" %}
+{% load static %}
+
+{% block pagestarter %}
+    <h1>PORTFOLIO</h1>
+    <p>
+        <img class="img" src="{% static 'css/img/blank.jpg' %}" alt="blank" title="blank" width="60" height="60" />
+        This page provides information about the developer's software development history'.
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </p>
+{% endblock %}
+
+{% block tab_labels%}
+    <ul>
+        <li>
+            <a id="edu_click" href="edu_info">
+                <span>
+                    Education
+                </span>
+            </a>
+        </li>
+        <li>
+            <a id="employ_click" href="employ_info">
+                <span>
+                    Employment
+                </span>
+            </a>
+        </li>
+        <li>
+            <a id="note_click" href="note_info">
+                <span>
+                    Noteworthy Achievements
+                </span>
+            </a>
+        </li>
+    </ul>
+{% endblock tab_labels%}
+
+
+{% block tab_content%}
+    <div id="edu_info">
+        <div class="roundcont">
+            <div class="roundtop"><img src="{% static 'css/img/tl.gif' %}" alt="tl img"  width="10" height="10" class="corner"  style="display: none" /> </div>
+            <p>
+                This is the education info.
+            </p>
+            <div class="roundbottom"><img src="{% static 'css/img/bl.gif' %}" alt="bl img" width="10" height="10" class="corner" style="display: none" /></div>
+        </div>
+    </div>
+    <div id="employ_info" style="display:none">
+        <div class="roundcont">
+            <div class="roundtop"><img src="{% static 'css/img/tl.gif' %}" alt="tl img"  width="10" height="10" class="corner"  style="display: none" /> </div>
+            <p>
+                This is the employment info.
+            </p>
+            <div class="roundbottom"><img src="{% static 'css/img/bl.gif' %}" alt="bl img" width="10" height="10" class="corner" style="display: none" /></div>
+        </div>
+    </div>
+    <div id="note_info" style="display:none">
+        <div class="roundcont">
+            <div class="roundtop"><img src="{% static 'css/img/tl.gif' %}" alt="tl img"  width="10" height="10" class="corner"  style="display: none" /> </div>
+            <p>
+                This is the noteworthy achievements info.
+            </p>
+            <div class="roundbottom"><img src="{% static 'css/img/bl.gif' %}" alt="bl img" width="10" height="10" class="corner" style="display: none" /></div>
+        </div>
+    </div>
+{% endblock tab_content%}
+    

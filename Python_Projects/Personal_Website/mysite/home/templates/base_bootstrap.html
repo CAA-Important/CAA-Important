@@ -6,7 +6,7 @@
         <title>{% block title %}{{ settings.APP_NAME }}{% endblock %}</title>
 
         <link rel="stylesheet"
-            href="{% static 'css/menu_style.css' %}"
+            href="{% static 'css/style.css' %}"
         >
 
         {% block head %} {% endblock %}
@@ -16,13 +16,13 @@
     <body>
         <div id="container">
             <div id="banner">
-                {% block pagename %}<h1>TEMP</h1>{% endblock %}
+                {% block pagename %}<h1>ALEC'S DJANGO WEBSITE</h1>{% endblock %}
             </div>
             <div id="navcontainer">
                 <ul id="navlist">
-                  <li id="active"><a id="current" href="/">Home</a></li>
+                  <li><a href="/">Home</a></li>
                   <li><a href="{% url 'about:about_app' %}">About</a></li>
-                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="{% url 'portfolio:portfolio_app' %}">Portfolio</a></li>
                   <li><a href="#">Services</a></li>
                   <li><a href="#">Product</a></li>
                   <li><a href="#">Resources</a></li>
@@ -41,5 +41,18 @@
     </body>
     {% block scripts%}
         <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#navlist li").each(function(){
+                    var link = $(this).children("a");
+                    if($(link).attr("href") == window.location.pathname)
+                    {
+                        $(link).attr("id", "current");
+                        this.id = "active";
+                    }
+                })
+            })
+        </script>
     {% endblock scripts%}
 </html>
