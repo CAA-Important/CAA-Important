@@ -1,3 +1,3 @@
 - 👋 Hi, I’m Alec Austin (@CAA-Important)
-- 👀 I’m interested in Python or C/C++ work mainly.  Web development is nice as well.
+- 👀 I’m interested in Python or Java work mainly.  Web development is nice as well.
 - 📫 How to reach me: alecaustinimportant@gmail.com
